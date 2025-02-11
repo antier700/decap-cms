@@ -2,6 +2,7 @@ backend:
   name: github   # or 'github' if you prefer direct GitHub integration
   repo: antier700/decap-cms
   branch: main       # specify your repository’s branch
+  site_domain: darling-bienenstitch-f25ac4.netlify.app
 
 media_folder: "public/uploads"  # where uploaded media files are stored
 public_folder: "/uploads"       # the public URL path for media

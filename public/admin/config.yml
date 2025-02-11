@@ -1,0 +1,21 @@
+backend:
+  name: github   # or 'github' if you prefer direct GitHub integration
+  repo: antier700/decap-cms
+  branch: main       # specify your repository’s branch
+
+media_folder: "public/uploads"  # where uploaded media files are stored
+public_folder: "/uploads"       # the public URL path for media
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"  # location of your blog markdown files
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+
+# https://github.com/antier700/decap-cms.git
